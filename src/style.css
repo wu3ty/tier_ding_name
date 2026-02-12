@@ -1,16 +1,16 @@
 :root {
-  --bg-sky: #f8fbff;
-  --bg-mint: #dcfff2;
-  --bg-sun: #fff6ce;
-  --ink: #163035;
-  --ink-soft: #4b6468;
+  --bg-sky: #cfefff;
+  --bg-mint: #dbf4ca;
+  --bg-sun: #ffe1b4;
+  --ink: #17364f;
+  --ink-soft: #315169;
   --panel: #ffffff;
-  --line: #d6e6ef;
-  --primary: #0f9f8c;
-  --primary-hover: #0a7a6b;
-  --danger: #e44a3b;
-  --danger-hover: #ba372b;
-  --card-glow: 0 20px 45px rgba(15, 159, 140, 0.16);
+  --line: #c8dced;
+  --primary: #5f3078;
+  --primary-hover: #4b2261;
+  --danger: #9a3b21;
+  --danger-hover: #7a2f1a;
+  --card-glow: 0 20px 45px rgba(47, 94, 168, 0.16);
   --sector-angle: calc(360deg / 26);
   --half-sector-angle: calc(var(--sector-angle) / 2);
 }
@@ -25,9 +25,9 @@ body {
   color: var(--ink);
   font-family: "Nunito", "Avenir Next", "Trebuchet MS", sans-serif;
   background:
-    radial-gradient(circle at 15% 18%, #dff7ff 0%, transparent 38%),
-    radial-gradient(circle at 82% 10%, #ffe9be 0%, transparent 40%),
-    linear-gradient(140deg, var(--bg-sky), var(--bg-mint) 60%, var(--bg-sun));
+    radial-gradient(circle at 15% 18%, #dff4ff 0%, transparent 38%),
+    radial-gradient(circle at 82% 10%, #ffe8ca 0%, transparent 40%),
+    linear-gradient(140deg, var(--bg-sky), #ffd5ef 50%, var(--bg-sun));
 }
 
 .bg-bubbles {
@@ -111,8 +111,8 @@ body {
   margin: 0 0 0.55rem;
   padding: 0.3rem 0.65rem;
   border-radius: 999px;
-  background: #fff2cc;
-  color: #8b5a00;
+  background: #ffd55a;
+  color: #7b2d13;
   font-weight: 800;
   font-size: 0.82rem;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ button:hover:enabled {
 
 #new-round-btn {
   background: var(--primary);
-  box-shadow: 0 10px 16px rgba(15, 159, 140, 0.3);
+  box-shadow: 0 10px 16px rgba(95, 48, 120, 0.3);
 }
 
 #new-round-btn:hover:enabled {
@@ -225,7 +225,7 @@ button:disabled {
   height: 0;
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
-  border-top: 34px solid #153238;
+  border-top: 34px solid #17364f;
   z-index: 4;
   filter: drop-shadow(0 4px 2px rgba(8, 26, 30, 0.35));
 }
@@ -235,11 +235,13 @@ button:disabled {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 10px solid #163035;
+  border: 10px solid #17364f;
   background: repeating-conic-gradient(
     from calc(-90deg - var(--half-sector-angle)),
-    #62d7c2 0deg var(--sector-angle),
-    #ffd172 var(--sector-angle) calc(var(--sector-angle) * 2)
+    #5fe3d2 0deg var(--sector-angle),
+    #ffd55a var(--sector-angle) calc(var(--sector-angle) * 2),
+    #ff7d3d calc(var(--sector-angle) * 2) calc(var(--sector-angle) * 3),
+    #5f3078 calc(var(--sector-angle) * 3) calc(var(--sector-angle) * 4)
   );
   box-shadow:
     inset 0 0 0 4px #fffae6,
@@ -255,7 +257,7 @@ button:disabled {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: radial-gradient(circle at 35% 35%, #ffffff, #edf8ff);
-  border: 4px solid #163035;
+  border: 4px solid #17364f;
   z-index: 3;
 }
 
@@ -274,7 +276,7 @@ button:disabled {
   text-align: center;
   font-size: 2rem;
   font-weight: 900;
-  color: #163035;
+  color: #17364f;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 

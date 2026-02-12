@@ -65,7 +65,7 @@ export function createGame(elements) {
   }
 
   function setRoundControls(isRunning) {
-    minutesInput.disabled = isRunning;
+    void isRunning;
   }
 
   function ensureAudioContext() {
