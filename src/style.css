@@ -45,13 +45,27 @@ body {
   position: relative;
   z-index: 1;
   width: min(1080px, 92vw);
-  margin: 1.8rem auto 2.2rem;
+  margin: 2.2rem auto 2.2rem;
   display: grid;
   gap: 1.2rem;
 }
 
+.github-ribbon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  line-height: 0;
+}
+
+.github-ribbon img {
+  display: block;
+  width: 149px;
+  height: 149px;
+}
+
 .top-actions {
-  justify-self: end;
+  margin-top: 0.9rem;
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -454,14 +468,19 @@ button:disabled {
   }
 
   .top-actions {
-    justify-self: stretch;
+    margin-top: 0.7rem;
   }
 
   .top-actions select {
-    margin-left: auto;
+    margin-left: 0;
   }
 
   .howto-grid {
     grid-template-columns: 1fr;
+  }
+
+  .github-ribbon img {
+    width: 112px;
+    height: 112px;
   }
 }
