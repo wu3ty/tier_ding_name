@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tier Ding Name</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="bg-bubbles" aria-hidden="true"></div>
+    <main class="app">
+      <div class="top-actions">
+        <label for="language-select" data-i18n="languageLabel">Sprache</label>
+        <select id="language-select" aria-label="Sprache waehlen">
+          <option value="de">Deutsch</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="hero-tag" data-i18n="heroTag">Das wilde Wortspiel fuer Kinder</p>
+          <h1>Tier Ding Name</h1>
+          <p data-i18n="heroText">
+            Dreht am Gluecksrad, ruft laut den Buchstaben und findet blitzschnell ein Tier,
+            ein Ding und einen Namen!
+          </p>
+        </div>
+        <div class="hero-art">
+          <img src="./src/assets/kids-hero.svg" alt="Kinder spielen zusammen" />
+        </div>
+      </header>
+
+      <section class="game-shell">
+        <section class="panel panel-game">
+          <div class="row">
+            <label for="minutes" data-i18n="minutesLabel">Rundenzeit (Minuten)</label>
+            <input id="minutes" type="number" min="1" max="30" value="2" />
+          </div>
+
+          <div class="row controls">
+            <button id="new-round-btn" type="button" data-i18n="newRoundButton">
+              Neue Runde starten
+            </button>
+          </div>
+
+          <section class="wheel-section" aria-label="Gluecksrad fuer Startbuchstaben">
+            <div class="wheel-pointer" aria-hidden="true"></div>
+            <div id="wheel" class="wheel" role="img" aria-label="Gluecksrad">
+              <div id="wheel-letters" class="wheel-letters" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <div class="status-grid">
+            <article class="card">
+              <h2 data-i18n="startLetterTitle">Startbuchstabe</h2>
+              <p id="letter" class="big">-</p>
+            </article>
+
+            <article id="timer-card" class="card">
+              <h2 data-i18n="timeRemainingTitle">Verbleibende Zeit</h2>
+              <p id="timer" class="big">00:00</p>
+            </article>
+          </div>
+
+          <p id="round-end-banner" class="round-end-banner" data-i18n="endRoundBanner" hidden>
+            Runde vorbei!
+          </p>
+
+          <p id="message" class="message" aria-live="polite" data-i18n="messageReady">
+            Waehle eine Zeit und starte eine Runde.
+          </p>
+        </section>
+      </section>
+
+      <section class="howto panel">
+        <h2 data-i18n="howtoTitle">So macht das Spiel am meisten Spass</h2>
+        <div class="howto-grid howto-grid-4">
+          <article>
+            <h3 data-i18n="howtoOneTitle">1. Rad drehen</h3>
+            <p data-i18n="howtoOneText">
+              Startet die Runde und schaut, wo der Zeiger stoppt. Der Buchstabe gilt fuer alle.
+            </p>
+          </article>
+          <article>
+            <h3 data-i18n="howtoTwoTitle">2. Schnell denken</h3>
+            <p data-i18n="howtoTwoText">
+              Sammelt kreative Ideen. Je ausgefallener und passender, desto besser.
+            </p>
+          </article>
+          <article>
+            <h3 data-i18n="howtoThreeTitle">3. Gemeinsam feiern</h3>
+            <p data-i18n="howtoThreeText">
+              Wenn die Zeit um ist, vergleicht ihr eure Begriffe. 2 Punkte fuer ein einzigartiges
+              Wort, 1 Punkt bei gleicher Antwort, 0 Punkte ohne Antwort.
+            </p>
+          </article>
+          <article>
+            <h3 data-i18n="howtoFourTitle">4. Gewinner ist</h3>
+            <p data-i18n="howtoFourText">
+              Wer nach mehreren Runden die meisten Punkte hat.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

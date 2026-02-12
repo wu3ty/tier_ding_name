@@ -1,0 +1,24 @@
+<svg width="760" height="520" viewBox="0 0 760 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="520" rx="36" fill="#E8FBFF"/>
+  <ellipse cx="160" cy="120" rx="90" ry="52" fill="#FFF3BC"/>
+  <ellipse cx="625" cy="385" rx="100" ry="58" fill="#D9FBEA"/>
+  <circle cx="250" cy="275" r="138" fill="#FEFFFF" stroke="#CFE8F1" stroke-width="8"/>
+  <path d="M250 137C326 137 388 198 388 274C388 350 326 411 250 411C174 411 112 350 112 274C112 198 174 137 250 137Z" fill="#BFF2E6"/>
+  <path d="M250 144L267 251L370 274L267 297L250 404L233 297L130 274L233 251L250 144Z" fill="#FFD373"/>
+  <circle cx="250" cy="274" r="42" fill="#FFFFFF" stroke="#315D66" stroke-width="8"/>
+  <path d="M250 255L264 284H236L250 255Z" fill="#315D66"/>
+  <circle cx="520" cy="250" r="84" fill="#FFD788" stroke="#2C454C" stroke-width="7"/>
+  <circle cx="488" cy="224" r="16" fill="#2C454C"/>
+  <circle cx="548" cy="224" r="16" fill="#2C454C"/>
+  <circle cx="492" cy="220" r="5" fill="#FFFFFF"/>
+  <circle cx="552" cy="220" r="5" fill="#FFFFFF"/>
+  <ellipse cx="520" cy="264" rx="20" ry="15" fill="#2C454C"/>
+  <path d="M502 289C510 299 529 301 538 289" stroke="#2C454C" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="520" cy="250" r="90" stroke="#FFF4D6" stroke-width="9"/>
+  <g>
+    <circle cx="556" cy="360" r="56" fill="#80D7FF" stroke="#2C454C" stroke-width="6"/>
+    <path d="M530 359L548 376L581 344" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="460" y="70" width="220" height="64" rx="20" fill="#FFFFFF" stroke="#D4EAF3" stroke-width="4"/>
+  <text x="570" y="112" text-anchor="middle" fill="#2D5560" font-family="Nunito, sans-serif" font-size="33" font-weight="800">LOS GEHT'S!</text>
+</svg>
