@@ -1,6 +1,6 @@
 # Tier, Ding, Name
 
-A simple frontend skeleton for the game "Tier Ding Name", "Animal, Thing, Name" (aka _Categories_ in English):
+A simple frontend skeleton for the game "Tier Ding Name", "Animal, Thing, Name" (aka _Categories_ in English). The running application is available here https://wu3ty.github.io/tier_ding_name/.
 
 - Random starting letter (A-Z) via animated spinning wheel
 - Round timer with selectable duration (1-30 minutes)
@@ -33,3 +33,4 @@ npm test
 - Round results view
 - Persistence (e.g., LocalStorage)
 - Build setup (e.g., Vite) for deployment
+
